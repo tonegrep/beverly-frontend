@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Clock from './clock';
+import {FriendsDropdownButton, PlayPauseButton, StopButton, BackButton} from "./button"
+import {FriendsDropdownMenu, FriendsCurrentMenu, ButtonMenu} from "./menu"
 import './index.css';
 
 function getRandomColor() {
@@ -11,37 +14,34 @@ function getRandomColor() {
     return color;
 }
 
-class Box extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: '',
-            color: getRandomColor(),
-        };
-        this.updateName = this.updateName.bind(this);
-    }
 
-    updateName(event) {
-        this.setState({
-            name: event.target.value,
-            color: getRandomColor(),
-        });
-    }
-
+class ProgressBar extends React.Component {
     render() {
-        return (
-            <div className="box">
-                <h1 style={{ color: this.state.color }}>{this.state.name}</h1>
-                <input type="text" name="nameBox" onChange={this.updateName} />
+        return(
+            <div>
             </div>
-        );
+        )
     }
 }
 
+class Box extends React.Component {
+    render() {
+        return (
+            <div className="box">
+                <FriendsDropdownButton/>
+                <FriendsDropdownMenu/>
+                <Clock/>
+                <ButtonMenu/>
+                <ProgressBar/>
+                <FriendsCurrentMenu/>
+                <BackButton/>
+            </div>
+        )
+    }
+
+}
+
 ReactDOM.render(
-    <React.Fragment>
-        <Box />
-        <Box />
-    </React.Fragment>,
+    <Box/>,
     document.getElementById('root'),
 );
