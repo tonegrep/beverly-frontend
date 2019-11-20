@@ -9,7 +9,7 @@ class Button extends React.Component {
             <div>
             </div>
         )
-    }
+    };
 }
 
 export class FriendsDropdownButton extends Button {
@@ -18,7 +18,7 @@ export class FriendsDropdownButton extends Button {
             <div>
             </div>
         )
-    }
+    };
 }
 
 export class PlayPauseButton extends Button {
@@ -27,7 +27,7 @@ export class PlayPauseButton extends Button {
             <div>
             </div>
         )
-    }
+    };
 }
 
 export class StopButton extends Button {
@@ -36,7 +36,7 @@ export class StopButton extends Button {
             <div>
             </div>
         )
-    }
+    };
 }
 
 export class BackButton extends Button {
@@ -45,5 +45,5 @@ export class BackButton extends Button {
             <div>
             </div>
         )
-    }
+    };
 }

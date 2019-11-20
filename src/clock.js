@@ -5,16 +5,16 @@ import './clock.css';
 
 class Clock extends React.Component {
     constructor(props){
-        super(props)
-        this.state = {}
+        super(props);
+        this.state = {};
     }
     render() {
 
-        const sqSize = this.props.sqSize
-        const radius = (this.props.sqSize - this.props.strokeWidth) / 2
-        const viewBox = `0 0 ${sqSize} ${sqSize}`
-        const dashArray = radius * Math.PI * 2
-        const dashOffset = dashArray - dashArray * this.props.percentage / 100
+        const sqSize = this.props.sqSize;
+        const radius = (this.props.sqSize - this.props.strokeWidth) / 2;
+        const viewBox = `0 0 ${sqSize} ${sqSize}`;
+        const dashArray = radius * Math.PI * 2;
+        const dashOffset = dashArray - dashArray * this.props.percentage / 100;
         return(
         
         <svg
@@ -65,7 +65,7 @@ class Clock extends React.Component {
 
         </svg>
         )
-    }
+    };
 }
 
 Clock.defaultProps = {

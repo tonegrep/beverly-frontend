@@ -21,10 +21,16 @@ class ProgressBar extends React.Component {
             <div>
             </div>
         )
-    }
+    };
 }
 
-class Box extends React.Component {
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        };
+    };
     render() {
         return (
             <div className="box">
@@ -37,11 +43,11 @@ class Box extends React.Component {
                 <BackButton/>
             </div>
         )
-    }
+    };
 
 }
 
 ReactDOM.render(
-    <Box/>,
+    <App/>,
     document.getElementById('root'),
 );
