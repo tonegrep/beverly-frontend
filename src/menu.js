@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {PlayPauseButton, StopButton} from './button'
+// import {PlayPauseButton, StopButton} from './button'
 import './index.css';
 
 class Menu extends React.Component {
@@ -35,8 +35,7 @@ export class ButtonMenu extends Menu {
     render() {
         return(
             <div className="buttonmenu">
-                <PlayPauseButton/>
-                <StopButton/>
+                
             </div>
         )
     }
