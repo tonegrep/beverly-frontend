@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Clock from './clock';
-import {FriendsDropdownButton, PlayPauseButton, StopButton, BackButton} from "./button"
 import {FriendsDropdownMenu, FriendsCurrentMenu, ButtonMenu} from "./menu"
 import './index.css';
 
@@ -34,13 +33,11 @@ class App extends React.Component {
     render() {
         return (
             <div className="box">
-                <FriendsDropdownButton/>
                 <FriendsDropdownMenu/>
                 <Clock/>
                 <ButtonMenu/>
                 <ProgressBar/>
                 <FriendsCurrentMenu/>
-                <BackButton/>
             </div>
         )
     };

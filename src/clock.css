@@ -1,26 +1,59 @@
 #progressInput {
-    margin: 20px auto;
-    width: 30%;
-  }
-  
-  .circle-background,
-  .circle-progress {
-    fill: none;
-  }
-  
-  .circle-background {
-    stroke: #ddd;
-  }
-  
-  .circle-progress {
-    stroke: lightskyblue;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  
-  .circle-text {
-    font-family: monospace;
-    font-size: 3em;
-    /* font-weight: bold; */
-    fill: grey;
-  }
+  margin: 20px auto;
+  width: 30%;
+}
+
+.circle-background,
+.circle-progress {
+  fill: none;
+}
+
+.circle-background {
+  stroke: #ddd;
+}
+
+.circle-progress {
+  /* stroke: #87cefa; */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.circle-text {
+  font-family: monospace;
+  font-size: 3em;
+  fill: grey;
+}
+
+.menu {
+  /* box-shadow: 2px -2px grey; */
+  background-color: white;
+  /* margin: 5%; */
+  padding: 2%;
+  /* border-style: solid;
+  border-color: #ddd; */
+  display: inline-block;
+  /* border-radius: 3px; */
+}
+
+.pomo-menu{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pomo-buttonmenu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pomo-button{
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pomo-button:hover{
+  background: #ddd;
+}
