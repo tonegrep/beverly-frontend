@@ -14,7 +14,7 @@
 
 .circle-progress {
   /* stroke: #87cefa; */
-  stroke-linecap: round;
+  stroke-linecap: arrow;
   stroke-linejoin: round;
 }
 
