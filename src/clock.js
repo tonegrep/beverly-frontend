@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './clock.css';
-import { createTypeAnnotationBasedOnTypeof } from '@babel/types';
 
 class Clock extends React.Component {
     constructor(props){
