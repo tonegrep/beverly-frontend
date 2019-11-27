@@ -14,14 +14,6 @@ function getRandomColor() {
 }
 
 
-class ProgressBar extends React.Component {
-    render() {
-        return(
-            <div>
-            </div>
-        )
-    };
-}
 
 class App extends React.Component {
     constructor(props) {
@@ -33,11 +25,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="box">
-                <FriendsDropdownMenu/>
                 <Clock/>
-                <ButtonMenu/>
-                <ProgressBar/>
-                <FriendsCurrentMenu/>
             </div>
         )
     };
