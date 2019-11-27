@@ -28,16 +28,21 @@ class Clock extends React.Component {
         if (this.state.active) {
             const periodLength = (this.state.inPomo) ? this.state.pomodoroLength : this.state.breakLength;
             if (this.state.currentMinute*60+this.state.currentSecond != periodLength) {
+                let percentTimer = setInterval(() => {
+                    if (this.state.active)
+                        this.setState(state => ({
+                            circlePercentage : this.state.circlePercentage - ((1/periodLength) * 100)/50,
+                        }));
+                }, 5);
+                setTimeout(() => {clearInterval(percentTimer);}, 250);
                 if (this.state.currentSecond != 59) {
                     this.setState(state => ({
                         currentSecond : this.state.currentSecond + 1,
-                        circlePercentage : this.state.circlePercentage - (1/periodLength)*100,
                     }));
                 } else {
                     this.setState(state => ({
                         currentSecond : 0,
                         currentMinute : this.state.currentMinute + 1,
-                        circlePercentage : this.state.circlePercentage - (1/periodLength)*100,
                     }));
                 }
             } else {
@@ -63,7 +68,6 @@ class Clock extends React.Component {
             }
 
         }
-
     }, 1000);
 
     stopTimer() {
