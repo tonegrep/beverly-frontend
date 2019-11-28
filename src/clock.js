@@ -155,6 +155,9 @@ class Clock extends React.Component {
                     <button className="pomo-button" onClick={this.resumeTimer}>start</button>
                     <button className="pomo-button" onClick={this.stopTimer}>stop</button>
                 </div>
+                <div className="pomo-progress">
+                    dskjhfg;
+                </div>
         </div>
         )
     };
